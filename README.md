@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Brindhamanick
+- 👋 Hi, I’m Brindha!
 - 🌱 I’m currently learning at SREC...
 
 
