@@ -1,25 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>Employee Onboarding Chatbot</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/chatbot.png" type="image/gif" sizes="20x20">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style1.css" />
+  
+ 
 </head>
+<style>
+  .button1 {
+    background-color:lightpink; 
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 9px;
+    font-size: 16px;
+    font-family: aharoni;
+    cursor: pointer;
+  }
+  .button {
+    background-color:rgb(19, 141, 141); /* Green */
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 9px;
+    font-size: 16px;
+    font-family: aharoni;
+    cursor: pointer;
+  }
+  </style>
 <body>
-    <h1>Welcome to Bindas Music</h1>
-    <p>This is a basic HTML page with minimal styling.</p>
+  <header>
+    <div class="row" id="navbarSection">
+      <ul class="nav">
+        <li>
+          <a href="#homeSection">HOME</a>
+        </li>
+        <li>
+          <a href="#aboutUsSection">ABOUT US</a>
+        </li>
+        <li>
+          <a href="#ChatbotSection">MEET CHATBOT</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="title" id="homeSection">
+      <h1 >Employee Onboarding Chatbot</h1><br>
+      <br>
+      <h2>The Better Way To Start The Onboarding</h2>
+      <br>
+      <h2>Ding-Dong!🛎️ Employee Calling!📞</h2>
+      <br><br>
+      <a href="#aboutUsSection">
+        <i class="fa fa-angle-double-down down-arrow"></i>
+      </a>
+      <br>
+      
+    </div>
+  </header>
+ 
+  <div class="about-us-container" id="aboutUsSection">
+    <div class="phone">
+      
+      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20030703.jpg"alt="home"  class="content show" />
+     
+      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20193915.jpg" alt ="User Interface" class="content"/>
+     
+      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20202146.jpg" width=1% alt="File Uploads" class="content"/>
+     
+      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20200420.jpg" alt="Store the details" class="content" />
+     
+      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20201210.jpg" alt="email" class="content">
+
+      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20030305.jpg" alt="impact" class="content">
+
+      <nav>
+        <ul>
+          <li class="active">
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+          </li>
+          <li>
+            <i class="fas fa-book-open"></i>
+            <p>User Interface</p>
+          </li>
+          <li>
+            <i class="fas fa-book-open"></i>
+            <p>File Uploads</p>
+          </li>
+          <li>
+            <i class="fas fa-box"></i>
+            <p>Store the details</p>
+          </li>
+         
+          <li>
+            <i class="fas fa-users"></i>
+            <p>Instant Emails</p>
+          </li>
+          <li>
+            <i class="fas fa-users"></i>
+            <p>Impacr</p>
+          </li>
+        </ul>
+      </nav>
+      
+    </div>
+    <br>
+    
+    <script src="script1.js"></script>
+  </div>
+
 </body>
 </html>
