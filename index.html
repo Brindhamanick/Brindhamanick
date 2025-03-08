@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Bindas Music</title>
@@ -8,98 +7,21 @@
   <link href="style.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style1.css" />
-  <!-- Added Playwrite Deutschland Grundschrift Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playwrite+Deutschland+Grundschrift&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      justify-content: center;
-      font-family: 'Playwrite Deutschland Grundschrift', cursive, sans-serif; /* Updated font */
-    }
-    .button1 {
-      background-color: lightpink;
-      color: white;
-      border: none;
-      padding: 15px;
+    .phone-title {
       text-align: center;
-      display: inline-block;
-      border-radius: 9px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
     }
-    .button {
-      background-color: rgb(19, 141, 141);
-      color: white;
-      border: none;
-      padding: 15px;
+    .phone-container {
+      margin-bottom: 50px; /* Added bottom spacing */
+    }
+    .contact-info {
       text-align: center;
-      display: inline-block;
-      border-radius: 9px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .phone {
-      position: relative;
-      overflow: hidden;
-      border: 3px solid #eee;
-      border-radius: 15px;
-      height: 515px;
-      width: 285px;
-    }
-    .phone .content {
-      opacity: 0;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: calc(100% - 60px);
-      width: 100%;
-      transition: opacity 0.4s ease;
-    }
-    .phone .content.show {
-      opacity: 1;
-    }
-    nav {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      margin-top: -5px;
-      width: 100%;
-    }
-    nav ul {
-      background-color: #fff;
-      display: flex;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      height: 60px;
-    }
-    nav li {
-      color: #d0d0d0;
-      cursor: pointer;
-      flex: 1;
-      padding: 10px;
-      text-align: center;
-    }
-    nav ul li p {
-      font-size: 12px;
-      margin: 2px 0;
-    }
-    nav ul li:hover,
-    nav ul li.active {
-      color: #151515;
-    }
-    footer {
-      background-color: #000000;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -113,84 +35,74 @@
       </ul>
     </div>
     <div class="title" id="homeSection">
-      <h1>Bindas Music</h1><br>
-      <h2>Sound Soul Sync</h2><br>
-      <h3>It's just You and the Music!</h3><br>
-      <h4>🚧 Website Under Maintenance..🚧</h4><br>
-      
-      <!-- Added Buttons -->
-      <div style="margin: 20px 0;">
+      <h1>Bindas Music</h1>
+      <h2>Sound. Soul. Sync. 🤍</h2>
+      <!-- <h4>🚧 Website Under Maintenance..🚧</h4> -->
+      <div class="button-container">
         <a href="https://play.google.com/store/apps/details?id=com.tunes.bindasmusic" target="_blank" class="button">
           <i class="fab fa-google-play"></i> Get on Google Play
         </a>
-        <a href="https://buymeacoffee.com/heybindasmf" target="_blank" class="button1" style="margin-left: 10px;">
+        <a href="https://buymeacoffee.com/heybindasmf" target="_blank" class="button1">
           <i class="fas fa-coffee"></i> Support Us
         </a>
       </div>
-
+      <h3>It's just You and the Music!</h3>
+      <h4>Contact: <a href="mailto:heybindasmusic@gmail.com" style="color: white; text-decoration: underline;">heybindasmusic@gmail.com</a></h4>
+    
       <a href="#aboutUsSection">
         <i class="fa fa-angle-double-down down-arrow"></i>
-      </a><br>
+      </a>
+    
     </div>
   </header>
 
   <div class="about-us-container" id="aboutUsSection">
-    <div class="phone">
-      <img src="https://play-lh.googleusercontent.com/L1Awf1aAH4pYKo-pG0YEG_bPx2PIEkhhEk_rfOBFYt7TdIWxRSeNgk3tcVIRzbMe9p_9=w5120-h2880-rw" alt="home" class="content show" />
-      <img src="https://play-lh.googleusercontent.com/1_yjoptWf8qZRmA_MDEIK2WTuk3NyneSTwX9CkwkHI63yYT45bEECFcmJhhVIofgN2Y=w5120-h2880-rw" alt="User Interface" class="content" />
-      <img src="https://play-lh.googleusercontent.com/X-NrAjsr9ZWtXE33aHXGertlISbQihFoen4XvPrYQTaeLHu_BvETmv66Zxe0TCp2Wg=w5120-h2880-rw" width=1% alt="File Uploads" class="content" />
-      <img src="https://play-lh.googleusercontent.com/FnmUDgaQvuo4XSfMDcx-AfjsC4feAL2JgLCsgr_3Y4KJZu18EmNHlTNpX7JVsZBiFqw=w5120-h2880-rw" alt="Store the details" class="content" />
-      <img src="https://play-lh.googleusercontent.com/2hUGQniiwNMp-Mlw6L2-VTVs3oqeE4Fs37bR0NlcuKXvcYHmOY8T1k3EVdZKQpLwjwM=w5120-h2880-rw" alt="email" class="content">
-      <img src="https://play-lh.googleusercontent.com/2hUGQniiwNMp-Mlw6L2-VTVs3oqeE4Fs37bR0NlcuKXvcYHmOY8T1k3EVdZKQpLwjwM=w5120-h2880-rw" alt="impact" class="content">
-      <nav>
-        <ul>
-          <li class="active">
-            <p>Home</p>
-          </li>
-          <li>
-            <p>User Interface</p>
-          </li>
-          <li>
-            <p>Playlist</p>
-          </li>
-          <li>
-            <p>Lyrics</p>
-          </li>
-          <li>
-            <p>Disco Mode</p>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <br>
-    <script>
-      const contents = document.querySelectorAll('.content')
-      const listItems = document.querySelectorAll('nav ul li')
+    <div class="phone-container">
+      <div class="phone">
+        <img src="https://play-lh.googleusercontent.com/L1Awf1aAH4pYKo-pG0YEG_bPx2PIEkhhEk_rfOBFYt7TdIWxRSeNgk3tcVIRzbMe9p_9=w5120-h2880-rw" alt="home" class="content show" />
+        <img src="https://play-lh.googleusercontent.com/1_yjoptWf8qZRmA_MDEIK2WTuk3NyneSTwX9CkwkHI63yYT45bEECFcmJhhVIofgN2Y=w5120-h2880-rw" alt="User Interface" class="content" />
+        <img src="https://play-lh.googleusercontent.com/X-NrAjsr9ZWtXE33aHXGertlISbQihFoen4XvPrYQTaeLHu_BvETmv66Zxe0TCp2Wg=w5120-h2880-rw" alt="File Uploads" class="content" />
+        <img src="https://play-lh.googleusercontent.com/FnmUDgaQvuo4XSfMDcx-AfjsC4feAL2JgLCsgr_3Y4KJZu18EmNHlTNpX7JVsZBiFqw=w5120-h2880-rw" alt="Store the details" class="content" />
+        <img src="https://play-lh.googleusercontent.com/2hUGQniiwNMp-Mlw6L2-VTVs3oqeE4Fs37bR0NlcuKXvcYHmOY8T1k3EVdZKQpLwjwM=w5120-h2880-rw" alt="email" class="content" />
+        <nav>
+          <ul>
+            <li class="active"><p>Home</p></li>
+            <li><p>User Interface</p></li>
+            <li><p>Playlist</p></li>
+            <li><p>Lyrics</p></li>
+            <li><p>Disco Mode</p></li>
+          </ul>
+        </nav>
+      </div>
+    </div>   
+  </div>
 
-      listItems.forEach((item, idx) => {
-        item.addEventListener('click', () => {
-          hideAllContents()
-          hideAllItems()
-          item.classList.add('active')
-          contents[idx].classList.add('show')
-        })
-      })
 
-      function hideAllContents() {
-        contents.forEach(content => content.classList.remove('show'))
-      }
 
-      function hideAllItems() {
-        listItems.forEach(item => item.classList.remove('active'))
-      }
-    </script>
-  </div><br>
-  <br>
-  <br><br><br><br>
- 
   <footer>
     <p>© 2025 Bindas Music. All rights reserved.</p>
   </footer>
-</body>
 
+  <script>
+    const contents = document.querySelectorAll('.content');
+    const listItems = document.querySelectorAll('nav ul li');
+
+    listItems.forEach((item, idx) => {
+      item.addEventListener('click', () => {
+        hideAllContents();
+        hideAllItems();
+        item.classList.add('active');
+        contents[idx].classList.add('show');
+      });
+    });
+
+    function hideAllContents() {
+      contents.forEach(content => content.classList.remove('show'));
+    }
+
+    function hideAllItems() {
+      listItems.forEach(item => item.classList.remove('active'));
+    }
+  </script>
+</body>
 </html>
