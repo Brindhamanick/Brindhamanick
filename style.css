@@ -6,12 +6,15 @@ html {
     padding: 0;
 }
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://raw.githubusercontent.com/Brindhamanick/Brindhamanick/refs/heads/main/assests/cardbg5.webp');
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
+
+
 .nav {
+    font-family: 'Avenir';
     list-style: none;
     position: fixed;
     background: black;
@@ -48,7 +51,7 @@ header {
 .title h1 {
     color: white;
     font-family: cursive;
-    font-size: 40px;
+    font-size: 42px;
     text-align: center;
     /*margin-top: 275px;
     margin-left: 80px; */
@@ -56,11 +59,22 @@ header {
 .title h2 {
     color: white;
     font-family: cursive;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     /*margin-top: 275px;
     margin-left: 80px; */
 }
+
+.title h3 {
+    color: white;
+    font-family: cursive;
+    font-size: 16px;
+    text-align: center;
+    /*margin-top: 275px;
+    margin-left: 80px; */
+}
+
+
 .title .down-arrow {
     font-size:48px;
     color:white;
@@ -69,7 +83,7 @@ header {
     cursor: pointer;
 }
 .about-us-container {
-    background-image: url("https://static.vecteezy.com/system/resources/previews/000/581/452/original/wave-pink-abstract-background-with-copy-space-vector-illustration-eps10.jpg");
+    background-image: url("https://github.com/Brindhamanick/Brindhamanick/blob/main/assests/bg.png?raw=true");
     background-repeat: no-repeat;
     background-size: cover ;
     padding: 40px 40px 100px 40px;
@@ -84,3 +98,12 @@ header {
     text-align: center;
 }
 
+
+footer p {
+    color: white;
+    font-family: cursive;
+    font-size: 13px;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}

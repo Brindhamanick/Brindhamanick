@@ -3,41 +3,104 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Employee Onboarding Chatbot</title>
-  <link rel="icon" href="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/chatbot.png" type="image/gif" sizes="20x20">
+  <title>Bindas Music</title>
+  <link rel="icon" href="https://play-lh.googleusercontent.com/5rzUJ55r9fpeCpyonVNGvhV6D1hDviIx0i7OHS19XLQikKzabKbowX5oA8Rpn8BOy8Q=w480-h960-rw" type="image/gif" sizes="20x20">
   <link href="style.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <link rel="stylesheet" href="style1.css" />
-  
- 
-</head>
-<style>
-  .button1 {
-    background-color:lightpink; 
-    color: white;
-    border: none;
-    padding: 15px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 9px;
-    font-size: 16px;
-    font-family: aharoni;
-    cursor: pointer;
-  }
-  .button {
-    background-color:rgb(19, 141, 141); /* Green */
-    color: white;
-    border: none;
-    padding: 15px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 9px;
-    font-size: 16px;
-    font-family: aharoni;
-    cursor: pointer;
-  }
+  <style>
+    /* @import url('https://fonts.googleapis.com/css?family=Avenir&display=swap'); */
+    * {
+      box-sizing: border-box;
+      justify-content: center;
+      /* font-family: sans-serif; */
+    }
+    .button1 {
+      background-color: lightpink;
+      color: white;
+      border: none;
+      padding: 15px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 9px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .button {
+      background-color: rgb(19, 141, 141);
+      color: white;
+      border: none;
+      padding: 15px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 9px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .phone {
+      position: relative;
+      overflow: hidden;
+      border: 3px solid #eee;
+      border-radius: 15px;
+      height: 535px;
+      width: 300px;
+    }
+    .phone .content {
+      opacity: 0;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: calc(100% - 60px);
+      width: 100%;
+      transition: opacity 0.4s ease;
+    }
+    .phone .content.show {
+      opacity: 1;
+    }
+    nav {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-top: -5px;
+      width: 100%;
+    }
+    nav ul {
+      background-color: #fff;
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      height: 60px;
+    }
+    nav li {
+      color: #d0d0d0;
+      cursor: pointer;
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+    }
+    nav ul li p {
+      font-size: 12px;
+      margin: 2px 0;
+    }
+    nav ul li:hover,
+    nav ul li.active {
+      color: #151515;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
   </style>
+</head>
+
 <body>
   <header>
     <div class="row" id="navbarSection">
@@ -49,45 +112,35 @@
           <a href="#aboutUsSection">ABOUT US</a>
         </li>
         <li>
-          <a href="#ChatbotSection">MEET CHATBOT</a>
+          <a href="#MusicSection">MUSIC</a>
         </li>
-        
       </ul>
     </div>
     <div class="title" id="homeSection">
-      <h1 >Employee Onboarding Chatbot</h1><br>
+      <h1>Bindas Music</h1><br>
+      <h2>Sound Soul Sync</h2>
       <br>
-      <h2>The Better Way To Start The Onboarding</h2>
-      <br>
-      <h2>Ding-Dong!🛎️ Employee Calling!📞</h2>
+      <h3>It's just You and the Music!</h2>
       <br><br>
       <a href="#aboutUsSection">
         <i class="fa fa-angle-double-down down-arrow"></i>
       </a>
       <br>
-      
     </div>
   </header>
- 
+
   <div class="about-us-container" id="aboutUsSection">
     <div class="phone">
-      
-      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20030703.jpg"alt="home"  class="content show" />
-     
-      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20193915.jpg" alt ="User Interface" class="content"/>
-     
-      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20202146.jpg" width=1% alt="File Uploads" class="content"/>
-     
-      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20200420.jpg" alt="Store the details" class="content" />
-     
-      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20201210.jpg" alt="email" class="content">
-
-      <img src="https://raw.githubusercontent.com/Brindhamanick/chatbot_email/main/Screenshot%202022-02-17%20030305.jpg" alt="impact" class="content">
-
+      <img src="https://play-lh.googleusercontent.com/L1Awf1aAH4pYKo-pG0YEG_bPx2PIEkhhEk_rfOBFYt7TdIWxRSeNgk3tcVIRzbMe9p_9=w5120-h2880-rw" alt="home" class="content show" />
+      <img src="https://play-lh.googleusercontent.com/1_yjoptWf8qZRmA_MDEIK2WTuk3NyneSTwX9CkwkHI63yYT45bEECFcmJhhVIofgN2Y=w5120-h2880-rw" alt="User Interface" class="content" />
+      <img src="https://play-lh.googleusercontent.com/X-NrAjsr9ZWtXE33aHXGertlISbQihFoen4XvPrYQTaeLHu_BvETmv66Zxe0TCp2Wg=w5120-h2880-rw" width=1% alt="File Uploads" class="content" />
+      <img src="https://play-lh.googleusercontent.com/FnmUDgaQvuo4XSfMDcx-AfjsC4feAL2JgLCsgr_3Y4KJZu18EmNHlTNpX7JVsZBiFqw=w5120-h2880-rw" alt="Store the details" class="content" />
+      <img src="https://play-lh.googleusercontent.com/2hUGQniiwNMp-Mlw6L2-VTVs3oqeE4Fs37bR0NlcuKXvcYHmOY8T1k3EVdZKQpLwjwM=w5120-h2880-rw" alt="email" class="content">
+      <img src="https://play-lh.googleusercontent.com/2hUGQniiwNMp-Mlw6L2-VTVs3oqeE4Fs37bR0NlcuKXvcYHmOY8T1k3EVdZKQpLwjwM=w5120-h2880-rw" alt="impact" class="content">
       <nav>
         <ul>
           <li class="active">
-            <i class="fas fa-home"></i>
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEyIDMuMjVhLjc1Ljc1IDAgMCAxIC43NS43NXYxNmEuNzUuNzUgMCAwIDEtMS41IDBWNGEuNzUuNzUgMCAwIDEgLjc1LS43NW0tNCAzYS43NS43NSAwIDAgMSAuNzUuNzV2MTBhLjc1Ljc1IDAgMCAxLTEuNSAwVjdBLjc1Ljc1IDAgMCAxIDggNi4yNW04IDBhLjc1Ljc1IDAgMCAxIC43NS43NXYxMGEuNzUuNzUgMCAwIDEtMS41IDBWN2EuNzUuNzUgMCAwIDEgLjc1LS43NW0tMTIgNGEuNzUuNzUgMCAwIDEgLjc1Ljc1djJhLjc1Ljc1IDAgMCAxLTEuNSAwdi0yYS43NS43NSAwIDAgMSAuNzUtLjc1bTE2IDBhLjc1Ljc1IDAgMCAxIC43NS43NXYyYS43NS43NSAwIDAgMS0xLjUgMHYtMmEuNzUuNzUgMCAwIDEgLjc1LS43NSIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9zdmc+" alt="Home">
             <p>Home</p>
           </li>
           <li>
@@ -96,29 +149,48 @@
           </li>
           <li>
             <i class="fas fa-book-open"></i>
-            <p>File Uploads</p>
+            <p>Playlist</p>
           </li>
           <li>
             <i class="fas fa-box"></i>
-            <p>Store the details</p>
-          </li>
-         
-          <li>
-            <i class="fas fa-users"></i>
-            <p>Instant Emails</p>
+            <p>Lyrics</p>
           </li>
           <li>
             <i class="fas fa-users"></i>
-            <p>Impacr</p>
+            <p>Disco Mode</p>
           </li>
         </ul>
       </nav>
-      
     </div>
     <br>
-    
-    <script src="script1.js"></script>
-  </div>
+    <script>
+      const contents = document.querySelectorAll('.content')
+      const listItems = document.querySelectorAll('nav ul li')
 
+      listItems.forEach((item, idx) => {
+        item.addEventListener('click', () => {
+          hideAllContents()
+          hideAllItems()
+          item.classList.add('active')
+          contents[idx].classList.add('show')
+        })
+      })
+
+      function hideAllContents() {
+        contents.forEach(content => content.classList.remove('show'))
+      }
+
+      function hideAllItems() {
+        listItems.forEach(item => item.classList.remove('active'))
+      }
+    </script>
+  </div><br>
+  <br>
+  <br><br><br><br>
+ 
+  <footer>
+    <p>&copy; 2025 Bindas Music. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
