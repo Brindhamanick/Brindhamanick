@@ -9,12 +9,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <link rel="stylesheet" href="style1.css" />
+  <!-- Added Playwrite Deutschland Grundschrift Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+Deutschland+Grundschrift&display=swap" rel="stylesheet">
   <style>
-    /* @import url('https://fonts.googleapis.com/css?family=Avenir&display=swap'); */
     * {
       box-sizing: border-box;
       justify-content: center;
-      /* font-family: sans-serif; */
+      font-family: 'Playwrite Deutschland Grundschrift', cursive, sans-serif; /* Updated font */
     }
     .button1 {
       background-color: lightpink;
@@ -26,6 +27,7 @@
       border-radius: 9px;
       font-size: 16px;
       cursor: pointer;
+      text-decoration: none;
     }
     .button {
       background-color: rgb(19, 141, 141);
@@ -37,6 +39,7 @@
       border-radius: 9px;
       font-size: 16px;
       cursor: pointer;
+      text-decoration: none;
     }
     .phone {
       position: relative;
@@ -105,30 +108,29 @@
   <header>
     <div class="row" id="navbarSection">
       <ul class="nav">
-        <li>
-          <a href="#homeSection">HOME</a>
-        </li>
-        <li>
-          <a href="#aboutUsSection">ABOUT US</a>
-        </li>
-        <li>
-          <a href="#MusicSection">MUSIC</a>
-        </li>
+        <li><a href="#homeSection">HOME</a></li>
+        <li><a href="#aboutUsSection">ABOUT US</a></li>
       </ul>
     </div>
     <div class="title" id="homeSection">
       <h1>Bindas Music</h1><br>
-      <h2>Sound Soul Sync</h2>
-      <br>
-      <h3>It's just You and the Music!</h3> 
-      <br>
-      <h4>🚧 Website Under Maintenance..🚧</h4>
-      <br><br>
+      <h2>Sound Soul Sync</h2><br>
+      <h3>It's just You and the Music!</h3><br>
+      <h4>🚧 Website Under Maintenance..🚧</h4><br>
+      
+      <!-- Added Buttons -->
+      <div style="margin: 20px 0;">
+        <a href="https://play.google.com/store/apps/details?id=com.tunes.bindasmusic" target="_blank" class="button">
+          <i class="fab fa-google-play"></i> Get on Google Play
+        </a>
+        <a href="https://buymeacoffee.com/heybindasmf" target="_blank" class="button1" style="margin-left: 10px;">
+          <i class="fas fa-coffee"></i> Support Us
+        </a>
+      </div>
 
       <a href="#aboutUsSection">
         <i class="fa fa-angle-double-down down-arrow"></i>
-      </a>
-      <br>
+      </a><br>
     </div>
   </header>
 
@@ -143,23 +145,18 @@
       <nav>
         <ul>
           <li class="active">
-            <!-- <span class="solar--soundwave-bold-duotone"></span> -->
             <p>Home</p>
           </li>
           <li>
-            <!-- <i class="fas fa-book-open"></i> -->
             <p>User Interface</p>
           </li>
           <li>
-            <!-- <i class="fas fa-book-open"></i> -->
             <p>Playlist</p>
           </li>
           <li>
-            <!-- <i class="fas fa-box"></i> -->
             <p>Lyrics</p>
           </li>
           <li>
-            <!-- <i class="fas fa-users"></i> -->
             <p>Disco Mode</p>
           </li>
         </ul>
@@ -192,7 +189,7 @@
   <br><br><br><br>
  
   <footer>
-    <p>&copy; 2025 Bindas Music. All rights reserved.</p>
+    <p>© 2025 Bindas Music. All rights reserved.</p>
   </footer>
 </body>
 
