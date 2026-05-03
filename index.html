@@ -512,21 +512,60 @@
       border-bottom-right-radius: inherit;
     }
 
-    #image03 .frame {
+    .image-component {
+      display: block;
+      line-height: 0;
+      max-width: 100%;
+      position: relative;
+    }
+
+    .image-component>.frame {
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      display: inline-block;
+      max-width: 100%;
+      overflow: hidden;
+      vertical-align: top;
+      width: 100%;
+    }
+
+    .image-component>.frame>img {
+      border-radius: 0 !important;
+      max-width: 100%;
+      vertical-align: top;
+      width: inherit;
+    }
+
+    .image-component.full>.frame {
+      display: block;
+    }
+
+    .image-component.full:first-child>.frame {
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+    }
+
+    .image-component.full:last-child>.frame {
+      border-bottom-left-radius: inherit;
+      border-bottom-right-radius: inherit;
+    }
+
+    .image-component.instance-3>.frame {
       width: 7.875rem;
-      border-radius: 100%;
+      border-radius: 1rem;
       border-color: rgba(255, 255, 255, 0.141);
       border-style: solid;
       border-width: 1px;
       transition: none;
     }
 
-    #image03 img {
-      border-radius: inherit !important;
-      padding: 0.25rem;
+    .image-component.instance-3>.frame>img:first-child {
+      border-radius: calc(1rem - 1px) !important;
     }
 
-    #image03 .frame img {
+    .image-component.instance-3>.frame>img {
+      border-radius: inherit !important;
+      padding: 0.25rem;
       transition: none;
     }
 
@@ -784,6 +823,19 @@
       background-color: #F29D6D !important;
     }
 
+    #buttons01.buttons-component.instance-1>li>a {
+      background-color: rgba(93, 207, 222, 0.29);
+      color: #FFFFFF;
+      background-image: linear-gradient(243deg, #8C51D6 0%, transparent 74%);
+      background-position: 0% 0%;
+      background-repeat: repeat;
+      background-size: cover;
+    }
+
+    #buttons01.buttons-component.instance-1>li>a:hover {
+      background-color: #F29D6D !important;
+    }
+
     #buttons01 li a:hover {
       transform: scale(1.0425);
     }
@@ -922,6 +974,25 @@
       text-align: var(--alignment);
     }
 
+    .container-component {
+      position: relative;
+    }
+
+    .container-component>.wrapper {
+      vertical-align: top;
+      position: relative;
+      max-width: 100%;
+      border-radius: inherit;
+    }
+
+    .container-component>.wrapper>.inner {
+      vertical-align: top;
+      position: relative;
+      max-width: 100%;
+      border-radius: inherit;
+      text-align: var(--alignment);
+    }
+
     #main .container.full:first-child>.wrapper {
       border-top-left-radius: inherit;
       border-top-right-radius: inherit;
@@ -954,6 +1025,10 @@
       align-items: center;
       justify-content: center;
       background-color: #2A282E;
+      background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%22640%22%20height%3D%22480%22%20viewBox%3D%220%200%20640%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%20rect%20%7B%20opacity%3A%200.5%3B%20%7D%20polygon%20%7B%20opacity%3A%200.75%3B%20%7D%20%3C%2Fstyle%3E%20%3Cg%20id%3D%22bg%22%3E%20%3ClinearGradient%20id%3D%22bggrad%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%220%22%20y1%3D%22239.5937%22%20x2%3D%22640%22%20y2%3D%22239.5937%22%20gradientTransform%3D%22matrix%281%200%200%20-1%200%20479.5%29%22%3E%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3Atransparent%22%2F%3E%20%3Cstop%20offset%3D%220.3743%22%20style%3D%22stop-color%3Argba(0,0,0,0.502)%22%2F%3E%20%3Cstop%20offset%3D%220.7682%22%20style%3D%22stop-color%3Atransparent%22%2F%3E%20%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3Argba(0,0,0,0.502)%22%2F%3E%20%3C%2FlinearGradient%3E%20%3Crect%20style%3D%22fill%3Aurl%28%23bggrad%29%3B%22%20width%3D%22640%22%20height%3D%22479.8%22%20%2F%3E%20%3C%2Fg%3E%20%3Cg%20id%3D%22l1%22%3E%20%3ClinearGradient%20id%3D%22l1grad%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22180.3663%22%20y1%3D%22333.5278%22%20x2%3D%2272.0669%22%20y2%3D%22521.1078%22%20gradientTransform%3D%22matrix%281%200%200%20-1%200%20479.5%29%22%3E%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3Argba(0,0,0,0.502)%22%2F%3E%20%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3Atransparent%22%2F%3E%20%3C%2FlinearGradient%3E%20%3Cpolygon%20style%3D%22fill%3Aurl%28%23l1grad%29%3B%22%20points%3D%220%2C69%2092.3%2C196.8%20232%2C0%200%2C0%22%2F%3E%20%3C%2Fg%3E%20%3Cg%20id%3D%22l2%22%3E%20%3ClinearGradient%20id%3D%22l2grad%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%220%22%20y1%3D%22251.589%22%20x2%3D%22349.5438%22%20y2%3D%22251.589%22%20gradientTransform%3D%22matrix%281%200%200%20-1%200%20479.5%29%22%3E%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3Argba(0,0,0,0.502)%22%2F%3E%20%3Cstop%20offset%3D%220.8596%22%20style%3D%22stop-color%3Atransparent%22%2F%3E%20%3C%2FlinearGradient%3E%20%3Cpolygon%20style%3D%22fill%3Aurl%28%23l2grad%29%3B%22%20points%3D%2292.3%2C196.8%200%2C170.9%200%2C284.9%22%2F%3E%20%3C%2Fg%3E%20%3Cg%20id%3D%22l3%22%3E%20%3ClinearGradient%20id%3D%22l3grad%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22307.3333%22%20y1%3D%22161.2493%22%20x2%3D%22307.3333%22%20y2%3D%22479.5%22%20gradientTransform%3D%22matrix%281%200%200%20-1%200%20479.5%29%22%3E%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3Argba(0,0,0,0.502)%22%2F%3E%20%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3Atransparent%22%2F%3E%20%3C%2FlinearGradient%3E%20%3Cpolygon%20style%3D%22fill%3Aurl%28%23l3grad%29%3B%22%20points%3D%2292.7%2C196.4%20514.7%2C0%20522%2C0%20328.7%2C318.3%22%2F%3E%20%3C%2Fg%3E%20%3Cg%20id%3D%22l4%22%3E%20%3ClinearGradient%20id%3D%22l4grad%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22540.3333%22%20y1%3D%22470.1287%22%20x2%3D%22640%22%20y2%3D%22470.1287%22%20gradientTransform%3D%22matrix%281%200%200%20-1%200%20479.5%29%22%3E%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3A%23808080%22%2F%3E%20%3Cstop%20offset%3D%220.8596%22%20style%3D%22stop-color%3Atransparent%22%2F%3E%20%3C%2FlinearGradient%3E%20%3Cpolygon%20style%3D%22fill%3Aurl%28%23l4grad%29%3B%22%20points%3D%22540.3%2C0%20640%2C18.7%20640%2C0%22%2F%3E%20%3C%2Fg%3E%20%3Cg%20id%3D%22l5%22%3E%20%3ClinearGradient%20id%3D%22l5grad%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22327.3333%22%20y1%3D%22142.6941%22%20x2%3D%22640%22%20y2%3D%22142.6941%22%20gradientTransform%3D%22matrix%281%200%200%20-1%200%20479.5%29%22%3E%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3Argba(0,0,0,0.502)%22%2F%3E%20%3Cstop%20offset%3D%220.8596%22%20style%3D%22stop-color%3Atransparent%22%2F%3E%20%3C%2FlinearGradient%3E%20%3Cpolygon%20style%3D%22fill%3Aurl%28%23l5grad%29%3B%22%20points%3D%22327.3%2C317.1%20571.3%2C235.4%20640%2C276.3%20640%2C438.2%22%2F%3E%20%3C%2Fg%3E%20%3Cg%20id%3D%22l6%22%3E%20%3ClinearGradient%20id%3D%22l6grad%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22291.9083%22%20y1%3D%2222.7335%22%20x2%3D%22129.2015%22%20y2%3D%22304.55%22%20gradientTransform%3D%22matrix%281%200%200%20-1%200%20479.5%29%22%3E%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3Argba(0,0,0,0.502)%22%2F%3E%20%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3Atransparent%22%2F%3E%20%3C%2FlinearGradient%3E%20%3Cpolygon%20style%3D%22fill%3Aurl%28%23l6grad%29%3B%22%20points%3D%2292.3%2C196.2%20189.9%2C480%20251.7%2C480%20327.5%2C318.4%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       border-color: rgba(255, 255, 255, 0.2);
       border-style: solid;
       border-width: 1px;
@@ -1386,7 +1461,7 @@
         --spacing: 2rem;
       }
 
-      #image03 .frame {
+      .image-component.instance-3>.frame {
         width: 7.875rem;
       }
 
@@ -2291,6 +2366,11 @@
         d="M31.7,20.9L17.1,35.5c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4l-3.3-3.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.3,0.1-0.6,0.4-0.9L22.5,20L12.1,9.6c-0.2-0.2-0.4-0.5-0.4-0.9c0-0.3,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4 c0.3,0,0.6,0.1,0.9,0.4l14.6,14.6c0.2,0.2,0.4,0.5,0.4,0.9C32,20.3,31.9,20.6,31.7,20.9z">
       </path>
     </symbol>
+    <symbol id="icon-a8ac94bab98aae41181aaa5bee69fa75" viewBox="0 0 40 40">
+      <path
+        d="M23.6,5.1L23.6,5.1H9.2v29.7h5.9v-8.9h8.4c5.7,0,10.4-4.7,10.4-10.4S29.3,5.1,23.6,5.1L23.6,5.1z M23.6,20L23.6,20h-8.4 v-8.9h8.4c2.5,0,4.5,2,4.5,4.5S26,20,23.6,20z">
+      </path>
+    </symbol>
     <symbol id="icon-7a66fac84dc5d9fb5fafce395a384d40" viewBox="0 0 40 40">
       <path
         d="M20,3C10.6,3,3,10.6,3,20s7.6,17,17,17s17-7.6,17-17S29.4,3,20,3z M34.8,18.9h-6.2c-0.1-2.2-0.3-4.2-0.8-6.1 c1.5-0.4,3-0.9,4.2-1.5c0.6,0.9,1.2,1.8,1.6,2.9C34.3,15.7,34.7,17.3,34.8,18.9z M25.7,26.7c-1.5-0.3-3.1-0.4-4.6-0.5v-5.1h5.4 c-0.1,1.8-0.3,3.5-0.6,5.1C25.8,26.3,25.8,26.5,25.7,26.7z M14.2,26.2c-0.3-1.6-0.6-3.3-0.6-5.1h5.4v5.1c-1.6,0-3.2,0.2-4.6,0.5 C14.2,26.5,14.2,26.3,14.2,26.2z M14.3,13.3c1.5,0.3,3.1,0.4,4.6,0.5v5.1h-5.4c0.1-1.8,0.3-3.5,0.6-5.1 C14.2,13.7,14.2,13.5,14.3,13.3z M21.1,5.4C21.4,5.6,21.7,5.7,22,6c0.8,0.7,1.6,1.7,2.2,3c0.4,0.7,0.7,1.5,0.9,2.3 c-1.3,0.2-2.7,0.4-4,0.4V5.4z M18,6c0.3-0.3,0.6-0.4,0.9-0.6v6.2c-1.4,0-2.8-0.2-4-0.4c0.3-0.8,0.6-1.6,0.9-2.3 C16.5,7.7,17.2,6.7,18,6z M18.9,28.4v6.2c-0.3-0.1-0.6-0.3-0.9-0.6c-0.8-0.7-1.6-1.7-2.2-3c-0.4-0.7-0.7-1.5-0.9-2.3 C16.2,28.6,17.5,28.4,18.9,28.4z M22,34c-0.3,0.3-0.6,0.4-0.9,0.6v-6.2c1.4,0,2.8,0.2,4,0.4c-0.3,0.8-0.6,1.6-0.9,2.3 C23.5,32.3,22.8,33.3,22,34z M21.1,18.9v-5.1c1.6,0,3.2-0.2,4.6-0.5c0,0.2,0.1,0.4,0.1,0.5c0.3,1.6,0.6,3.3,0.6,5.1H21.1z M30.5,9.5 c0,0,0.1,0.1,0.1,0.1c-1,0.4-2.2,0.8-3.4,1.1c-0.6-1.9-1.4-3.5-2.4-4.8c0.3,0.1,0.6,0.2,0.9,0.3C27.5,7.1,29.1,8.1,30.5,9.5z M14.2,6.3c0.3-0.1,0.6-0.2,0.9-0.3c-0.9,1.3-1.7,2.9-2.4,4.8c-1.2-0.3-2.3-0.7-3.4-1.1c0,0,0.1-0.1,0.1-0.1 C10.9,8.1,12.5,7.1,14.2,6.3z M7.9,11.4c1.3,0.6,2.7,1.1,4.2,1.5c-0.4,1.9-0.7,3.9-0.8,6.1H5.2c0.1-1.6,0.5-3.2,1.1-4.7 C6.8,13.2,7.3,12.3,7.9,11.4z M5.2,21.1h6.2c0.1,2.2,0.3,4.2,0.8,6.1c-1.5,0.4-3,0.9-4.2,1.5c-0.6-0.9-1.2-1.8-1.6-2.9 C5.7,24.3,5.3,22.7,5.2,21.1z M9.5,30.5c0,0-0.1-0.1-0.1-0.1c1-0.4,2.2-0.8,3.4-1.1c0.6,1.9,1.4,3.5,2.4,4.8 c-0.3-0.1-0.6-0.2-0.9-0.3C12.5,32.9,10.9,31.9,9.5,30.5z M25.8,33.7c-0.3,0.1-0.6,0.2-0.9,0.3c0.9-1.3,1.7-2.9,2.4-4.8 c1.2,0.3,2.3,0.7,3.4,1.1c0,0-0.1,0.1-0.1,0.1C29.1,31.9,27.5,32.9,25.8,33.7z M32.1,28.6c-1.3-0.6-2.7-1.1-4.2-1.5 c0.4-1.9,0.7-3.9,0.8-6.1h6.2c-0.1,1.6-0.5,3.2-1.1,4.7C33.2,26.8,32.7,27.7,32.1,28.6z">
@@ -2313,7 +2393,7 @@
         <div id="container02" class="container default">
           <div class="wrapper">
             <div class="inner">
-              <div id="image03" class="image" style="opacity: 1; transform: none;"><a
+              <div id="image03" class="image-component instance-3" style="opacity: 1; transform: none;"><a
                   href="https://play.google.com/store/apps/details?id=com.tunes.bindasmusic" class="frame"><img
                     src="./Bindas Music_files/image03.jpg" alt="" title="Bindas Music"></a></div>
               <p id="text24">Sound. Soul. SYNC</p>
@@ -2331,10 +2411,10 @@
                       <title id="buttons01-icon-2-title">Chevron Right</title>
                       <use xlink:href="#icon-6f1498c47b5f47672990badd5a8b1884"></use>
                     </svg><span class="label">Support Us</span></a></li>
-                    <li><a href="https://www.producthunt.com/products/bindas-music?utm_source=other&utm_medium=social" class="button n02" role="button"><svg
-                      aria-labelledby="buttons01-icon-2-title">
-                      <title id="icons03-icon-1-title">Globe</title>
-                      <use xlink:href="#icon-7a66fac84dc5d9fb5fafce395a384d40"></use>
+                <li><a href="https://www.producthunt.com/products/bindas-music?utm_source=other&amp;utm_medium=social"
+                    class="button n03" role="button"><svg aria-labelledby="buttons01-icon-3-title">
+                      <title id="buttons01-icon-3-title">Product Hunt</title>
+                      <use xlink:href="#icon-a8ac94bab98aae41181aaa5bee69fa75"></use>
                     </svg><span class="label">Product Hunt</span></a></li>
               </ul>
               <hr id="divider08" class="full">
