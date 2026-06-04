@@ -1,0 +1,98 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.google.android.youtube",
+      "sha256_cert_fingerprints": [
+        "3D:7A:12:23:01:9A:A3:9D:9E:A0:E3:43:6A:B7:C0:89:6B:FB:4F:B6:79:F4:DE:5F:E7:C2:3F:32:6C:8F:99:4A",
+        "7F:D2:CE:A3:0C:3A:60:22:EB:29:41:9C:E8:F6:F9:2C:E8:A4:BD:35:B0:CC:87:9E:D3:CC:A6:CB:F5:E9:99:2D",
+        "5A:AD:2B:EE:6D:B9:5D:17:E0:5A:08:D7:D1:E6:4C:10:A1:51:18:79:15:44:83:91:6B:6A:E6:C7:FD:9C:B0:C6"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.google.android.youtube.tv",
+      "sha256_cert_fingerprints": [
+        "21:19:9D:11:2C:EC:E4:28:C8:2C:B0:DF:22:1D:A2:4F:F8:67:4C:7A:98:2A:83:A1:7A:97:0E:EC:43:30:5B:4A"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.google.android.apps.automotive.youtube",
+      "sha256_cert_fingerprints": [
+        "AA:AB:5F:1B:60:B7:5C:78:BC:42:56:7F:CA:48:1A:A4:AE:10:01:6C:35:D3:C5:B0:C1:37:3B:64:79:B8:CD:74"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.automotive.test.youtube",
+      "sha256_cert_fingerprints": [
+        "C1:8C:33:5D:D8:1F:33:36:72:7B:5D:1A:1F:69:F0:A2:D0:D8:F9:3A:42:6A:08:2A:56:58:0F:04:87:D7:5C:A5"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.google.android.apps.youtube.xr",
+      "sha256_cert_fingerprints": [
+        "23:46:4A:CE:7F:67:41:FC:0C:2E:56:E2:A6:9F:6E:1E:C8:18:64:03:F1:BA:BD:85:B2:CB:EC:A6:41:AE:FE:CC"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.google.android.apps.youtube.producer",
+      "sha256_cert_fingerprints": [
+        "5F:AE:AB:91:98:73:0E:9E:F1:F2:31:2F:74:2D:66:09:56:32:BF:FA:7C:C7:4F:5D:5C:82:80:CB:0B:18:4E:9D"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.google.android.apps.youtube.music",
+      "sha256_cert_fingerprints": [
+        "CA:7C:DF:89:09:2B:2C:18:5F:D3:41:35:C2:7A:F8:90:36:48:90:06:3D:88:47:47:80:DF:65:A5:68:5C:D3:11",
+        "A2:A1:AD:7B:A7:F4:1D:FC:A4:51:4E:2A:FE:B9:06:91:71:9A:F6:D0:FD:BE:D4:B0:9B:BF:0E:D8:97:70:1C:EB"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.google.android.apps.youtube.music.pwa",
+      "sha256_cert_fingerprints": [
+        "BF:88:0D:73:4F:F4:25:1D:5D:83:CD:08:1E:49:AA:41:52:CC:56:B0:8A:91:08:E4:9F:C8:AC:FC:4E:24:A5:0A"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.tunes.bindasmusic",
+      "sha256_cert_fingerprints": [
+        "6B:A8:9A:7F:20:29:24:15:3A:26:B4:A1:C2:EA:58:4F:D9:87:80:F7:96:55:99:6C:84:F4:D9:21:91:DB:E3:2A"
+      ]
+    }
+  }
+]
